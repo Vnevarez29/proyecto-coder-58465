@@ -34,6 +34,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 /*** FIN ESTILOS ETIQUETAS PRINCIPALES ***/
 
 /*** Header estilos ***/
@@ -63,6 +64,7 @@ header nav ul a {
     color: #F5C61B;
     text-decoration: solid;
 }
+
 /*** FIN ESTILOS HEADER ***/
 
 /*** estilo para imagenes de redes sociales ***/
@@ -89,15 +91,15 @@ header nav ul a {
 
 /*** Estilo para botones***/
 .boton {
-    margin: 10px 10px 10px 600px;
-    width: 150px;
-    margin-bottom: 50px;
-    align-items: center;
     background-color: #F5C61B;
     color: black;
-    padding: 6px 10px 6px 10px;
-    height: 30px;
     border-style: none;
+    width: 150px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
 /*** Portada  Styles***/
@@ -183,21 +185,22 @@ header nav ul a {
     padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 .beneficios {
     width: 200px;
     height: 200px;
     margin: 30px;
-    padding: 30px;
     display: inline-block;
     text-align: center;
+    padding-inline: 40px;
 }
 
 .tamanoImg {
     width: 150px;
     height: 150px;
-    margin: 5px 30px 5px 30px;
+    margin: 30px;
 }
 
 /*** estilos para pagina Coaches***/
@@ -277,8 +280,8 @@ header nav ul a {
 
 }
 
-#botonInstructores {
-    margin: 60px 30px 30px 60px;
+.botonInstructores {
+    margin: 50px;
 }
 
 /*** estudios Styles***/
@@ -371,10 +374,10 @@ header nav ul a {
     text-align: center;
 }
 
-#botonAnimate {
+/*#botonAnimate {
     margin: 60px 30px 30px 60px;
     margin-left: 45%;
-}
+}*/
 
 /*** horarios Styles***/
 .portadaHorario {
@@ -405,13 +408,13 @@ header nav ul a {
     padding-bottom: 40px;
 }
 
-#botonAnimate {
+/*#botonAnimate {
     margin: 60px 30px 30px 60px;
     margin-left: 45%;
     background-color: #F5C61B;
     color: black;
     padding: 5px 5px 5px 5px;
-}
+}*/
 
 /*** contacto Styles***/
 .divContacto {
@@ -430,6 +433,7 @@ header nav ul a {
     background-color: #F5C61B;
     color: black;
     padding: 5px 5px 5px 5px;
+    display: block;
 }
 
 #contactoH2 {

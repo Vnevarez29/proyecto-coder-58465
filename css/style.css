@@ -89,7 +89,7 @@ header nav ul a {
 
 /*** Estilo para botones***/
 .boton {
-    margin: 10px 10px 10px 600px;
+    /*margin: 10px 10px 10px 600px;*/
     width: 150px;
     margin-bottom: 50px;
     background-color: #F5C61B;

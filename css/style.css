@@ -92,6 +92,7 @@ header nav ul a {
     /*margin: 10px 10px 10px 600px;*/
     width: 150px;
     margin-bottom: 50px;
+    align-items: center;
     background-color: #F5C61B;
     color: black;
     padding: 6px 10px 6px 10px;

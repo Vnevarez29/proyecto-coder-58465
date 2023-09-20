@@ -210,7 +210,14 @@ header nav ul a {
     padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.parrafoCoach {
+    padding: 20px 100px 20px 100px;
+    /*padding-left: 200px;
+    padding-top: 20px;
+    padding-right: 200px;*/
 }
 
 .tamanoImg2 {
@@ -224,12 +231,6 @@ header nav ul a {
     padding-left: 50%;
 }
 
-.parrafoCoach {
-    padding-left: 200px;
-    padding-top: 20px;
-    padding-right: 200px;
-
-}
 
 /*** Footer Styles***/
 .footerstyle {

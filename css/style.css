@@ -121,7 +121,7 @@ header nav ul a {
 }
 
 .portada {
-    height: 50vh;
+    height: 600px;
     background-image: url("../imgs/banner-baik.jpg");
     background-position: inherit;
     background-repeat: no-repeat;

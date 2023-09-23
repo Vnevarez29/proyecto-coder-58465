@@ -233,6 +233,7 @@ header nav ul a {
     flex-wrap: wrap;
     gap: 20px;
     padding-bottom: 130px;
+    margin: 10px;
 }
 
 .coach {

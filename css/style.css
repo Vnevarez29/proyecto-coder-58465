@@ -7,7 +7,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    background-color: aliceblue;
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -121,7 +121,7 @@ header nav ul a {
 }
 
 .portada {
-    height: 500px;
+    height: 50vh;
     background-image: url("../imgs/banner-baik.jpg");
     background-position: inherit;
     background-repeat: no-repeat;
@@ -137,11 +137,11 @@ header nav ul a {
 }
 
 .boton-portada {
-    display: flex;
+   /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-top: 15px;
+    flex-direction: column;*/
+    padding-top: 30px;
 }
 
 /*** ACERCA DE***/
@@ -150,19 +150,32 @@ header nav ul a {
     color: white;
     background-color: black;
     padding: 50px;
+   /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;*/
+    flex-wrap: wrap;
+}
+#div-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: stretch;
 }
-
 .acercaInfo {
     /* display: inline-block;
-    padding-top: 20px;*/
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 5px;
 }
 
 #textoAcerca {
@@ -223,7 +236,7 @@ header nav ul a {
     padding-right: 50px;
     padding-bottom: 40px;
     margin: 10px;
-    text-align: justify;
+    text-align: center;
 }
 
 .container-coaches{

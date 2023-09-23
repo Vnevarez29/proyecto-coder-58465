@@ -184,7 +184,7 @@ header nav ul a {
 #beneficiosSeccion {
     background-color: white;
     color: black;
-    height: auto;
+    height: 600px;
     padding-top: 50px;
     flex-wrap: wrap;
 }

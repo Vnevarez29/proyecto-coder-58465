@@ -8,6 +8,8 @@
     <title>Inicio</title>
 </head>
 
+<!--Flex container-->
+
 <body>
     <header>
         <nav>
@@ -27,17 +29,17 @@
         </nav>
 
     </header>
-
+    <!--Flex item / container 2-->
     <main>
         <h1> ¡Ven a rodar con nosotros!</h1>
         <div class="portada">
         </div>
-        <div>
+        <div class="boton-portada">
             <button class="boton"><a href="./pages/contacto.html">Reserva tu lugar</a></button>
         </div>
         <section class="acercaStyle">
-            <h2>Acerca de nosotros</h2>
             <article class="acercaInfo">
+                <h2>Acerca de nosotros</h2>
                 <p id="textoAcerca">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Quasi laboriosam non maiores atque, adipisci ut. Deserunt id aut perspiciatis,
@@ -45,8 +47,8 @@
                     dolore voluptatem! Quasi repellendus non enim explicabo, iusto ullam et necessitatibus
                     laboriosam magni, impedit recusandae tenetur adipisci minima. Rem, a?
                 </p>
-                <p>
-                    <button id="botonAcerca"><a href="./pages/studios.html">Mas de nosotros</a></button>
+                <p id="boton-acerca">
+                    <button class="boton"><a href="./pages/studios.html">Mas de nosotros</a></button>
                 </p>
             </article>
             <article class="acercaInfo">
@@ -54,34 +56,37 @@
             </article>
         </section>
 
-        <section class="beneficiosSeccion">
+        <section id="beneficiosSeccion">
             <h2> Beneficios</h2>
-            <article class="beneficios">
-                <img src="./icons/baik.png" alt="" class="tamanoImg">
-                <p>Mejora el rendimiento</p>
-            </article>
+            <div class="container-beneficios">
+                <article class="beneficios">
+                    <img src="./icons/baik.png" alt="" class="tamanoImg">
+                    <p>Mejora el rendimiento</p>
+                </article>
 
-            <article class="beneficios">
-                <img src="./icons/energia.png" alt="" class="tamanoImg">
-                <p>Aumento de energía</p>
-            </article>
+                <article class="beneficios">
+                    <img src="./icons/energia.png" alt="" class="tamanoImg">
+                    <p>Aumento de energía</p>
+                </article>
 
-            <article class="beneficios">
-                <img src="./icons/motivacion.png" alt="" class="tamanoImg">
-                <p>Mayor motivación</p>
-            </article>
+                <article class="beneficios">
+                    <img src="./icons/motivacion.png" alt="" class="tamanoImg">
+                    <p>Mayor motivación</p>
+                </article>
 
-            <article class="beneficios">
-                <img src="./icons/salud-mental.png" alt="" class="tamanoImg">
-                <p>Mejora la salud</p>
-            </article>
+                <article class="beneficios">
+                    <img src="./icons/salud-mental.png" alt="" class="tamanoImg">
+                    <p>Mejora la salud</p>
+                </article>
+            </div>
+            <div>
+                <button class="boton"> <a href="./pages/contacto.html">Únete a Bai-k</a></button>
+            </div>
         </section>
-        <div>
-            <button class="boton"> <a href="./pages/contacto.html">Únete a Bai-k</a></button>
-        </div>
+
 
         <section class="coachSeccion">
-            <h2>Nuestros Coach</h2>
+            <h2>Nuestros Coaches</h2>
             <p class="parrafoCoach">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt aspernatur excepturi quibusdam,
                 laborum praesentium est qui temporibus dolores similique impedit.
@@ -89,34 +94,31 @@
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam assumenda amet vel deleniti tenetur
                 tempora autem ea nemo adipisci impedit.
             </p>
-            <article class="beneficios">
-                <img src="./imgs/spining-instructor-1.jpg" alt="instructorSpining" class="tamanoImg2">
-                <p class="textoCoach">Adriana</p>
-            </article>
-
-            <article class="beneficios">
-                <img src="./imgs/spining-instructor-2.jpg" alt="" class="tamanoImg2">
-                <p class="textoCoach">Lorena</p>
-            </article>
-
-            <article class="beneficios">
-                <img src="./imgs/spining-instructor-3.jpg" alt="" class="tamanoImg2">
-                <p class="textoCoach">Laura</p>
-            </article>
-
-            <article class="beneficios">
-                <img src="./imgs/spining-instructor-4.jpg" alt="" class="tamanoImg2">
-                <p class="textoCoach">Cecilia</p>
-            </article>
-            <br>
-            <br>
-            <br>
-            <br>
+            <div class="container-coaches">
+                <article class="coach">
+                    <img src="./imgs/spining-instructor-1.jpg" alt="instructorSpining" class="tamanoImg2">
+                    <p class="textoCoach">Adriana</p>
+                </article>
+    
+                <article class="coach">
+                    <img src="./imgs/spining-instructor-2.jpg" alt="" class="tamanoImg2">
+                    <p class="textoCoach">Lorena</p>
+                </article>
+    
+                <article class="coach">
+                    <img src="./imgs/spining-instructor-3.jpg" alt="" class="tamanoImg2">
+                    <p class="textoCoach">Laura</p>
+                </article>
+    
+                <article class="coach">
+                    <img src="./imgs/spining-instructor-4.jpg" alt="" class="tamanoImg2">
+                    <p class="textoCoach">Cecilia</p>
+                </article>
+            </div>
             <div>
                 <button class="boton"> <a href="./pages/instructores.html">Conócelos</a></button>
             </div>
         </section>
-
     </main>
 
     <footer class="footerstyle">
@@ -125,4 +127,5 @@
         </div>
     </footer>
 </body>
+
 </html>

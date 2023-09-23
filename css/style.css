@@ -184,7 +184,7 @@ header nav ul a {
 #beneficiosSeccion {
     background-color: white;
     color: black;
-    height: 600px;
+    height: auto;
     padding-top: 50px;
     flex-wrap: wrap;
 }
@@ -194,7 +194,7 @@ header nav ul a {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 50px;
 }
 
@@ -233,7 +233,6 @@ header nav ul a {
     flex-wrap: wrap;
     gap: 20px;
     padding-bottom: 130px;
-    margin: 10px;
 }
 
 .coach {

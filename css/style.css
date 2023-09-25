@@ -10,10 +10,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     background-color: white;
-    /*display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
     flex-wrap: wrap;
     align-content: stretch;*/
+}
+
+.grid-index{
     display: grid;
     grid-template-areas:
         "header header header"

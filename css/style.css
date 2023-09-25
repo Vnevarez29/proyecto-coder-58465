@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +25,7 @@ body {
         "titulocoach titulocoach titulocoach"
         "footer footer footer";
     grid-template-columns: 300px 3fr 1fr;
-    grid-template-rows: 100px 100px 80vh 100px auto auto auto 100px;
+    grid-template-rows: 80px 120px 80vh 100px auto auto auto 100px;
 }
 
 h1 {
@@ -34,8 +36,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-bottom: 20px;
+    flex-direction: row;
+    margin: 10px;
 }
 
 h2 {
@@ -59,28 +61,34 @@ a {
 /*** HEADER ***/
 header {
     grid-area: header;
+    background-color: black;
+    color: #F5C61B;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header img {
-    display: inline;
+.headerLeft {
+    display: flex;
+}
+
+.headerRight {
+    display: flex;
 }
 
 header nav {
-    background-color: black;
-    color: #F5C61B;
     padding: 20px 0px;
-    margin-bottom: 10px;
-    height: 30px;
 }
 
 header nav ul {
+    display: flex;
     list-style-type: none;
-    text-align: center;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 10px;
+    margin: 0 10px;
     text-align: center;
 }
 
@@ -93,17 +101,16 @@ header nav ul a {
 .imgRedes {
     width: 20px;
     height: 20px;
-    float: right;
-    padding: 5px;
+    padding-right: 2px;
+    margin: 5px;
 }
 
 /*** LOGO ***/
 #logo {
-    width: 40px;
-    height: 0 auto;
-    float: left;
-    border-radius: 10px;
+    width: 60px;
+    height: 50px;
     padding: 5px;
+    border-radius: 10px;
 }
 
 /*** BOTONES***/
@@ -120,7 +127,6 @@ header nav ul a {
     font-size: 16px;
     font-weight: bold;
 }
-
 
 /*** PORTADA***/
 #enLineaDiv {
@@ -193,7 +199,7 @@ header nav ul a {
 .acercaInfo {
     padding: 10px;
     margin: 10px;
-   
+
 }
 
 .imgacerca {

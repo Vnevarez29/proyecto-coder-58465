@@ -15,7 +15,7 @@ body {
     align-content: stretch;*/
 }
 
-.grid-index{
+.grid-index {
     display: grid;
     grid-template-areas:
         "header header header"
@@ -335,48 +335,95 @@ header nav ul a {
     flex-direction: row;
 }
 
-/*** instructores Styles***/
-/***.instructoresSeccion{
-    background-color: white;
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-}***/
+/*** INSTRUCTORES STYLE***/
+.main-grid-instructor {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "h1 h1 h1"
+        "row1 row1 aside"
+        "row2 row2 aside"
+        "btn-conocenos btn-conocenos btn-conocenos"
+        "footer footer footer";
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-template-rows: 80px 120px auto auto 100px 100px;
+}
+
+/*** grid areas***/
+.row1 {
+    grid-area: row1;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.row2 {
+    grid-area: row2;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 
 .instructores {
     width: 250px;
-    height: 250px;
-    margin: 30px;
-    padding: 30px;
-    display: inline-block;
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.instructores2 {
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .tamImgInst {
     width: 250px;
     height: 250px;
-    margin: 5px 30px 5px 30px;
     border-radius: 10px;
 }
 
 #tamImgInstMen {
-    width: 200px;
+    width: 230px;
     height: 250px;
-    margin: 5px 30px 5px 30px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
-
 .parrafoInstru {
     text-align: justify;
-    padding-left: 30px;
-
 }
 
+.btn-conocenos {
+    grid-area: btn-conocenos;
+    height: auto;
+}
 .botonInstructores {
-    margin: 50px;
+    padding: 50px;
 }
-
 
 /*** ESTUDIOS STYLES***/
 .portadaEstudios {

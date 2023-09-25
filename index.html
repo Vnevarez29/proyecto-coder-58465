@@ -8,14 +8,16 @@
     <title>Inicio</title>
 </head>
 
-<!--Flex container-->
-
 <body>
     <header>
         <nav>
             <div>
                 <ul>
                     <li><img src="./imgs/logoBaik2.jpg" alt="" id="logo"></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
                     <li> <a href="#">Inicio</a> </li>
                     <li> <a href="./pages/instructores.html">Instructores</a> </li>
                     <li> <a href="./pages/studios.html">Estudios</a> </li>
@@ -27,104 +29,107 @@
                 </ul>
             </div>
         </nav>
-
     </header>
-    <!--Flex item / container 2-->
-    <main>
-        <h1> ¡Ven a rodar con nosotros!</h1>
-        <div class="portada">
+    <!--PORTADA-->
+    <h1> ¡Ven a rodar con nosotros!</h1>
+    <div class="imgportada portada">
+
+    </div>
+    <div class="boton-portada">
+        <button class="boton"><a href="./pages/contacto.html">Reserva tu lugar</a></button>
+    </div>
+
+    <!--SECCION ACERCA DE-->
+    <div class="acerca">
+        <div>
+            <article class="parrafo-acerca">
+                <h2>Acerca de nosotros</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quasi laboriosam non maiores atque, adipisci ut. Deserunt id aut perspiciatis,
+                    veritatis sapiente quaerat officia laborum. Iste ipsa ex eaque repudiandae reiciendis
+                    dolore voluptatem! Quasi repellendus non enim explicabo, iusto ullam et necessitatibus
+                    laboriosam magni, impedit recusandae tenetur adipisci minima. Rem, a?
+                </p>
+                <p id="boton-acerca">
+                    <button class="boton"><a href="./pages/studios.html">Mas de nosotros</a></button>
+                </p>
+            </article>
         </div>
-        <div class="boton-portada">
-            <button class="boton"><a href="./pages/contacto.html">Reserva tu lugar</a></button>
+    </div>
+    <div class="imgacerca">
+        <article class="acercaInfo">
+            <img src="./imgs/Nosotros-baik.jpg" alt="" class="imgBenefit">
+        </article>
+    </div>
+
+    <!--SECCION BENEFICIOS-->
+    <section id="beneficiosSeccion" class="benef">
+        <h2> Beneficios</h2>
+        <div class="container-beneficios">
+            <article class="beneficios">
+                <img src="./icons/baik.png" alt="" class="tamanoImg">
+                <p>Mejora el rendimiento</p>
+            </article>
+
+            <article class="beneficios">
+                <img src="./icons/energia.png" alt="" class="tamanoImg">
+                <p>Aumento de energía</p>
+            </article>
+
+            <article class="beneficios">
+                <img src="./icons/motivacion.png" alt="" class="tamanoImg">
+                <p>Mayor motivación</p>
+            </article>
+
+            <article class="beneficios">
+                <img src="./icons/salud-mental.png" alt="" class="tamanoImg">
+                <p>Mejora la salud</p>
+            </article>
         </div>
-        <section class="acercaStyle">
-            <h2>Acerca de nosotros</h2>
-            <div id="div-container">
-                <article class="parrafo-acerca">
-                    <p id="textoAcerca">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Quasi laboriosam non maiores atque, adipisci ut. Deserunt id aut perspiciatis,
-                        veritatis sapiente quaerat officia laborum. Iste ipsa ex eaque repudiandae reiciendis
-                        dolore voluptatem! Quasi repellendus non enim explicabo, iusto ullam et necessitatibus
-                        laboriosam magni, impedit recusandae tenetur adipisci minima. Rem, a?
-                    </p>
-                    <p id="boton-acerca">
-                        <button class="boton"><a href="./pages/studios.html">Mas de nosotros</a></button>
-                    </p>
-                </article>
-                <article class="acercaInfo">
-                    <img src="./imgs/Nosotros-baik.jpg" alt="" class="imgBenefit">
-                </article>
-            </div>
-            
-        </section>
+        <div>
+            <button class="boton"> <a href="./pages/contacto.html">Únete a Bai-k</a></button>
+        </div>
+    </section>
 
-        <section id="beneficiosSeccion">
-            <h2> Beneficios</h2>
-            <div class="container-beneficios">
-                <article class="beneficios">
-                    <img src="./icons/baik.png" alt="" class="tamanoImg">
-                    <p>Mejora el rendimiento</p>
-                </article>
+    <!--SECCION COACH-->
+    <section class="coachSeccion titulocoach">
+        <h2>Nuestros Coaches</h2>
+        <p class="parrafoCoach">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt aspernatur excepturi quibusdam,
+            laborum praesentium est qui temporibus dolores similique impedit.
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam assumenda amet vel deleniti tenetur
+            tempora autem ea nemo adipisci impedit.
+        </p>
+       <div class="container-coaches">
+            <article class="coach">
+                <img src="./imgs/spining-instructor-1.jpg" alt="instructorSpining" class="tamanoImg2">
+                <p class="textoCoach">Adriana</p>
+            </article>
 
-                <article class="beneficios">
-                    <img src="./icons/energia.png" alt="" class="tamanoImg">
-                    <p>Aumento de energía</p>
-                </article>
+            <article class="coach">
+                <img src="./imgs/spining-instructor-2.jpg" alt="" class="tamanoImg2">
+                <p class="textoCoach">Lorena</p>
+            </article>
 
-                <article class="beneficios">
-                    <img src="./icons/motivacion.png" alt="" class="tamanoImg">
-                    <p>Mayor motivación</p>
-                </article>
+            <article class="coach">
+                <img src="./imgs/spining-instructor-3.jpg" alt="" class="tamanoImg2">
+                <p class="textoCoach">Laura</p>
+            </article>
 
-                <article class="beneficios">
-                    <img src="./icons/salud-mental.png" alt="" class="tamanoImg">
-                    <p>Mejora la salud</p>
-                </article>
-            </div>
-            <div>
-                <button class="boton"> <a href="./pages/contacto.html">Únete a Bai-k</a></button>
-            </div>
-        </section>
+            <article class="coach">
+                <img src="./imgs/spining-instructor-4.jpg" alt="" class="tamanoImg2">
+                <p class="textoCoach">Cecilia</p>
+            </article>
+        </div>
+        <div id="boton-coach">
+            <button class="boton"> <a href="./pages/instructores.html">Conócelos</a></button>
+        </div>
+    </section>
 
-
-        <section class="coachSeccion">
-            <h2>Nuestros Coaches</h2>
-            <p class="parrafoCoach">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt aspernatur excepturi quibusdam,
-                laborum praesentium est qui temporibus dolores similique impedit.
-                <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam assumenda amet vel deleniti tenetur
-                tempora autem ea nemo adipisci impedit.
-            </p>
-            <div class="container-coaches">
-                <article class="coach">
-                    <img src="./imgs/spining-instructor-1.jpg" alt="instructorSpining" class="tamanoImg2">
-                    <p class="textoCoach">Adriana</p>
-                </article>
-    
-                <article class="coach">
-                    <img src="./imgs/spining-instructor-2.jpg" alt="" class="tamanoImg2">
-                    <p class="textoCoach">Lorena</p>
-                </article>
-    
-                <article class="coach">
-                    <img src="./imgs/spining-instructor-3.jpg" alt="" class="tamanoImg2">
-                    <p class="textoCoach">Laura</p>
-                </article>
-    
-                <article class="coach">
-                    <img src="./imgs/spining-instructor-4.jpg" alt="" class="tamanoImg2">
-                    <p class="textoCoach">Cecilia</p>
-                </article>
-            </div>
-            <div>
-                <button class="boton"> <a href="./pages/instructores.html">Conócelos</a></button>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footerstyle">
+    <!--FOOTER-->
+    <footer class="footerstyle footer">
         <div>
             <h4>Copyright todos los derechos reservados Bai-k 2023</h4>
         </div>

@@ -353,7 +353,7 @@ header nav ul a {
 .row1 {
     grid-area: row1;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     height: auto;
     flex-wrap: wrap;
@@ -363,7 +363,7 @@ header nav ul a {
 .row2 {
     grid-area: row2;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     height: auto;
     flex-wrap: wrap;
@@ -389,6 +389,8 @@ aside {
     align-content: center;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #F5C61B;
+    border-radius: 10px;
 }
 
 .instructores2 {
@@ -399,12 +401,18 @@ aside {
     align-content: center;
     justify-content: center;
     height: auto;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: black;
+    color:#F5C61B;
+    margin: 5px;
+    border-radius: 10px;
 }
+
 .tamImgInst {
     width: 250px;
     height: 250px;
     border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 #tamImgInstMen {
@@ -413,6 +421,7 @@ aside {
     padding: 10px;
     border-radius: 20px;
 }
+
 .parrafoInstru {
     text-align: justify;
 }
@@ -421,6 +430,7 @@ aside {
     grid-area: btn-conocenos;
     height: auto;
 }
+
 .botonInstructores {
     padding: 50px;
 }
@@ -516,11 +526,6 @@ aside {
     margin-bottom: 30px;
 }
 
-/*#botonAnimate {
-    margin: 60px 30px 30px 60px;
-    margin-left: 45%;
-}*/
-
 /*** HORARIOS STYLES***/
 .portadaHorario {
     height: 500px;
@@ -549,14 +554,6 @@ aside {
 .sectionHorarioEspacio {
     padding-bottom: 40px;
 }
-
-/*#botonAnimate {
-    margin: 60px 30px 30px 60px;
-    margin-left: 45%;
-    background-color: #F5C61B;
-    color: black;
-    padding: 5px 5px 5px 5px;
-}*/
 
 /*** CONTACTO STYLES***/
 .divContacto {

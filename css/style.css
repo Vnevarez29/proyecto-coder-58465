@@ -1,78 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*** ETIQUETAS PRINCIPALES ***/
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    background-color: white;
-    /*flex-direction: column;
-    flex-wrap: wrap;
-    align-content: stretch;*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: white;
+  /*flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;*/
 }
 
 .grid-index {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "h1 h1 h1"
-        "imgportada imgportada imgportada"
-        "boton-portada boton-portada boton-portada"
-        "acerca acerca imgacerca"
-        "benef benef benef"
-        "titulocoach titulocoach titulocoach"
-        "footer footer footer";
-    grid-template-columns: 300px 3fr 1fr;
-    grid-template-rows: 80px 120px 80vh 100px auto auto auto 100px;
+  display: grid;
+  grid-template-areas: "header header header" "h1 h1 h1" "imgportada imgportada imgportada" "boton-portada boton-portada boton-portada" "acerca acerca imgacerca" "benef benef benef" "titulocoach titulocoach titulocoach" "footer footer footer";
+  grid-template-columns: 300px 3fr 1fr;
+  grid-template-rows: auto 120px 80vh 100px auto auto auto 100px;
 }
 
 h1 {
-    font-size: 45px;
-    text-align: center;
-    color: #F5C61B;
-    grid-area: h1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 10px;
+  font-size: 45px;
+  text-align: center;
+  color: #F5C61B;
+  grid-area: h1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 h2 {
-    font-size: 30px;
-    text-align: center;
-    color: #F5C61B;
-    padding-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #F5C61B;
+  padding-bottom: 10px;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+}
+
+h4 {
+  text-align: center;
 }
 
 /*** FIN ESTILOS ETIQUETAS PRINCIPALES ***/
-
 /*** HEADER ***/
 header {
-    grid-area: header;
-    background-color: black;
-    color: #F5C61B;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  grid-area: header;
+  background-color: black;
+  color: #F5C61B;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.headerLeft {
+/*.headerLeft {
     display: flex;
 }
 
@@ -97,485 +93,524 @@ header nav ul li {
 header nav ul a {
     color: #F5C61B;
     text-decoration: solid;
+}*/
+/*** AJUSTES DE ESTILO A BOOTSTRAP***/
+.bg-body-tertiary {
+  background-color: rgba(var(--bs-black), var(--bs-black)) !important;
+}
+
+.navbar {
+  --bs-navbar-color: rgba(var(--bs-F5C61B), 0.65);
+  --bs-navbar-hover-color: rgba(var(--bs-aliceblue), 0.8);
+  --bs-navbar-toggler-font-size: 4rem;
+  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3e%3cpath stroke="rgba%2833, 37, 41, 0.75%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e);
+  width: 100%;
+}
+
+.navbar-expand-lg {
+  justify-content: start;
+  align-items: start;
+}
+
+.navbar[data-bs-theme=dark] {
+  --bs-navbar-color: #F5C61B;
+}
+
+.navbar-collapse {
+  align-items: start;
 }
 
 /*** REDES SOCIALES***/
 .imgRedes {
-    width: 20px;
-    height: 20px;
-    padding-right: 2px;
-    margin: 5px;
+  width: 20px;
+  height: 20px;
+  padding-right: 2px;
+  margin: 5px;
 }
 
 /*** LOGO ***/
 #logo {
-    width: 60px;
-    height: 50px;
-    padding: 5px;
-    border-radius: 10px;
+  width: 60px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /*** BOTONES***/
 .boton {
-    background-color: #F5C61B;
-    color: black;
-    border-style: none;
-    width: 150px;
-    height: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: bold;
+  background-color: #F5C61B;
+  color: black;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /*** PORTADA***/
 #enLineaDiv {
-    display: inline-block;
-    margin: 10px;
+  display: inline-block;
+  margin: 10px;
 }
 
 .imgportada {
-    grid-area: imgportada;
+  grid-area: imgportada;
 }
 
 .portada {
-    /*height: 100vh;*/
-    background-image: url("../imgs/banner-baik.jpg");
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 100px;
-    margin-right: 100px;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 80vh;
+  background-image: url("../imgs/banner-baik.jpg");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .boton-portada {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;*/
-    grid-area: boton-portada;
-    padding-top: 30px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
+  grid-area: boton-portada;
+  padding-top: 30px;
 }
 
 /*** ACERCA DE***/
 .acerca {
-    color: white;
-    background-color: black;
-    padding: 20px;
-    grid-area: acerca;
-    flex-wrap: wrap;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  grid-area: acerca;
+  flex-wrap: wrap;
 }
 
 #div-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px;
 }
 
 .parrafo-acerca {
-    height: 0 auto;
-    margin: 5px;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+  height: 0 auto;
+  margin: 5px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 #boton-acerca {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .acercaInfo {
-    padding: 10px;
-    margin: 10px;
-
+  padding: 10px;
+  margin: 10px;
 }
 
 .imgacerca {
-    color: white;
-    background-color: black;
-    grid-area: imgacerca;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    object-fit: cover;
+  color: white;
+  background-color: black;
+  grid-area: imgacerca;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  object-fit: cover;
+  justify-content: center;
 }
 
 .imgBenefit {
-    width: 300px;
-    height: 250px;
-
-    display: flex;
-
+  width: 300px;
+  height: 250px;
+  display: flex;
 }
 
 /*** BENEFICIOS***/
 .benef {
-    grid-area: benef;
+  grid-area: benef;
 }
 
 #beneficiosSeccion {
-    background-color: white;
-    color: black;
-    padding-top: 50px;
-    flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  padding-top: 50px;
+  flex-wrap: wrap;
 }
 
 .container-beneficios {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .beneficios {
-    width: 250px;
-    height: 250px;
-    text-align: center;
+  width: 250px;
+  height: 250px;
+  text-align: center;
 }
 
 .tamanoImg {
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 /*** COACH***/
 .titulocoach {
-    grid-area: titulocoach;
+  grid-area: titulocoach;
 }
 
 .coachSeccion {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    /* width: 300px;
-    height: 0 auto;
-    padding-top: 50px;*/
-    flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  /* width: 300px;
+  height: 0 auto;
+  padding-top: 50px;*/
+  flex-wrap: wrap;
 }
 
 .parrafoCoach {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 40px;
-    margin: 10px;
-    text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  margin: 10px;
+  text-align: center;
 }
 
 .container-coaches {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 30px;
-    height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 30px;
+  height: auto;
 }
 
 .coach {
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .tamanoImg2 {
-    width: 230px;
-    height: 230px;
-    border-radius: 10px;
+  width: 230px;
+  height: 230px;
+  border-radius: 10px;
 }
 
 .textoCoach {
-    padding-bottom: 30px;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: oblique;
-    text-align: center;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: oblique;
+  text-align: center;
 }
 
 #boton-coach {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 /*** FOOTER***/
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 .footerstyle {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 10px;
-    margin-top: 10px;
-    padding: 20px 0px 20px 0px;
-    color: #F5C61B;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 20px 0px 20px 0px;
+  color: #F5C61B;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
 }
 
 /*** INSTRUCTORES STYLE***/
 .main-grid-instructor {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "h1 h1 h1"
-        "row1 row1 aside"
-        "row2 row2 aside"
-        "btn-conocenos btn-conocenos btn-conocenos"
-        "footer footer footer";
-    grid-template-columns: auto 1fr 0.5fr;
-    grid-template-rows: 80px 120px auto auto 100px 100px;
+  display: grid;
+  grid-template-areas: "header header header" "h1 h1 h1" "row1 row1 aside" "row2 row2 aside" "btn-conocenos btn-conocenos btn-conocenos" "footer footer footer";
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-template-rows: 80px 120px auto auto 100px 100px;
 }
 
 /*** grid areas***/
 .row1 {
-    grid-area: row1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 20px;
+  grid-area: row1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .row2 {
-    grid-area: row2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 20px;
+  grid-area: row2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 aside {
-    grid-area: aside;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 20px;
+  grid-area: aside;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .instructores {
-    width: 250px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #F5C61B;
-    border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #F5C61B;
+  border-radius: 10px;
+  margin: 5px;
+  align-items: center;
+  padding-top: 15px;
 }
 
 .instructores2 {
-    width: 250px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: black;
-    color:#F5C61B;
-    margin: 5px;
-    border-radius: 10px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: black;
+  color: #F5C61B;
+  margin: 5px;
+  border-radius: 10px;
+  align-items: center;
+  padding-top: 15px;
 }
 
 .tamImgInst {
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    padding-bottom: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding: 5px;
 }
 
 #tamImgInstMen {
-    width: 230px;
-    height: 250px;
-    padding: 10px;
-    border-radius: 20px;
+  width: 230px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .parrafoInstru {
-    text-align: justify;
+  text-align: center;
 }
 
 .btn-conocenos {
-    grid-area: btn-conocenos;
-    height: auto;
-}
-
-.botonInstructores {
-    padding: 50px;
+  grid-area: btn-conocenos;
+  height: auto;
 }
 
 /*** ESTUDIOS STYLES***/
 .portadaEstudios {
-    height: 500px;
-    background-image: url("../imgs/spining.jpg");
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
+  height: 500px;
+  background-image: url("../imgs/spining.jpg");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .parrafoEstudios {
-    text-align: justify;
-    padding-left: 150px;
-    width: 80%;
-    padding-bottom: 50px;
+  text-align: justify;
+  padding-left: 150px;
+  width: 80%;
+  padding-bottom: 50px;
 }
 
 .estudiosMorelos {
-    background-color: black;
-    color: white;
-    height: 500px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+  background-color: black;
+  color: white;
+  height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .estudiosArticle {
-    display: inline;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  display: inline;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .estudioH2 {
-    text-align: left;
-    margin-left: 200px;
+  text-align: left;
+  margin-left: 200px;
 }
 
 #imgEstudio1 {
-    width: 500px;
-    height: 400px;
-    margin-left: 200px;
-    float: left;
-    padding-top: 20px;
+  width: 500px;
+  height: 400px;
+  margin-left: 200px;
+  float: left;
+  padding-top: 20px;
 }
 
 #textoEstudioMor {
-    float: left;
-    width: 400px;
-    margin-bottom: 20px;
-    padding-left: 250px;
-    padding-top: 50px;
+  float: left;
+  width: 400px;
+  margin-bottom: 20px;
+  padding-left: 250px;
+  padding-top: 50px;
 }
 
 #textoEstudio {
-    float: left;
-    width: 400px;
-    margin-bottom: 20px;
-    margin-left: 200px;
-    padding-top: 50px;
+  float: left;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  padding-top: 50px;
 }
 
 .estudiosNava {
-    background-color: white;
-    color: black;
-    height: 500px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+  background-color: white;
+  color: black;
+  height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #imgEstudio2 {
-    width: 300px;
-    height: 400px;
-    float: righ;
-    padding-top: 20px;
-    padding-left: 320px;
+  width: 300px;
+  height: 400px;
+  float: righ;
+  padding-top: 20px;
+  padding-left: 320px;
 }
 
 .estudio2H2 {
-    text-align: right;
-    margin-right: 400px;
+  text-align: right;
+  margin-right: 400px;
 }
 
 #textoFooter {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /*** HORARIOS STYLES***/
 .portadaHorario {
-    height: 500px;
-    background-image: url("../imgs/coaches.jpg");
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+  height: 500px;
+  background-image: url("../imgs/coaches.jpg");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .horarioUL {
-    list-style-type: none;
-    text-decoration: none;
-    float: left;
-    padding-right: 50px;
+  list-style-type: none;
+  text-decoration: none;
+  float: left;
+  padding-right: 50px;
 }
 
 .horariosH2 {
-    margin-left: 40%;
-    padding-bottom: 10px;
+  margin-left: 40%;
+  padding-bottom: 10px;
 }
 
 .sectionHorarioEspacio {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 /*** CONTACTO STYLES***/
 .divContacto {
-    position: relative;
-    margin-left: 40%;
-    padding-top: 20px;
+  position: relative;
+  margin-left: 40%;
+  padding-top: 20px;
 }
 
 .mapa {
-    margin-left: 30%;
-    padding-top: 20px;
-    padding-bottom: 50px;
+  margin-left: 30%;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 #botonContacto {
-    background-color: #F5C61B;
-    color: black;
-    padding: 5px 5px 5px 5px;
-    display: block;
+  background-color: #F5C61B;
+  color: black;
+  padding: 5px 5px 5px 5px;
+  display: block;
 }
 
 #contactoH2 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
+/*** APLICANDO SCSS EN MY WEB***/
+.botonInstructores {
+  padding: 15px;
+}
+.botonInstructores .btnInstruct {
+  width: 200px;
+  height: 50px;
+  background-color: #F5C61B;
+  color: black;
+  border-style: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -4,53 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--enlace BSTP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--enlace hoja estilos-->
     <link rel="stylesheet" href="./css/style.css">
     <title>Inicio</title>
 </head>
 
-<body class="grid-index">
-    <header>
-        <div class="headerLeft">
-            <a href="#">
-                <img src="./imgs/logoBaik2.jpg" alt="" id="logo">
-            </a>
-        </div>
-        <nav>
-            <!--flex container-->
-            <ul>
-                <!--flex items-->
-                <li> <a href="#">Inicio</a> </li>
-                <li> <a href="./pages/instructores.html">Instructores</a> </li>
-                <li> <a href="./pages/studios.html">Estudios</a> </li>
-                <li> <a href="./pages/horarios.html">Horarios</a> </li>
-                <li> <a href="./pages/contacto.html">Contacto</a> </li>
-            </ul>
+<body>
+    <!--header con bootstrap-->
+    <header class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./imgs/logoBaik2.jpg" alt="" id="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/instructores.html">Instructores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/studios.html">Estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/horarios.html">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="icons/facebook.png" alt="" width="30px"
+                                            height="30px"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="icons/instagram.png" alt="" width="30px"
+                                            height="30px"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </nav>
-        <div class="headerRight">
-            <a href="#">
-                <a href=""><img src="./icons/whatsapp.png" alt="" class="imgRedes">
-                </a>
-                <a href="#">
-                    <img src="./icons/facebook.png" alt="" class="imgRedes">
-                </a>
-                <a href="#">
-                    <img src="./icons/instagram.png" alt="" class="imgRedes">
-                </a>
-        </div>
     </header>
     <!--PORTADA-->
-    <h1> ¡Ven a rodar con nosotros!</h1>
+    <h1 class="row"> ¡Ven a rodar con nosotros!</h1>
     <div class="imgportada portada">
 
     </div>
     <div class="boton-portada">
         <button class="boton"><a href="./pages/contacto.html">Reserva tu lugar</a></button>
     </div>
-
     <!--SECCION ACERCA DE-->
-    <div class="acerca">
-        <div>
+    <div class="container"></div>
+    <div class="acerca row">
+        <div class="col-md-7">
             <article class="parrafo-acerca">
                 <h2>Acerca de nosotros</h2>
                 <p>
@@ -65,13 +85,13 @@
                 </p>
             </article>
         </div>
-    </div>
-    <div class="imgacerca">
-        <article class="acercaInfo">
-            <img src="./imgs/Nosotros-baik.jpg" alt="" class="imgBenefit">
-        </article>
-    </div>
 
+        <div class="imgacerca col-md-5">
+            <article class="acercaInfo">
+                <img src="./imgs/Nosotros-baik.jpg" alt="" class="imgBenefit">
+            </article>
+        </div>
+    </div>
     <!--SECCION BENEFICIOS-->
     <section id="beneficiosSeccion" class="benef">
         <h2> Beneficios</h2>
@@ -136,13 +156,16 @@
             <button class="boton"> <a href="./pages/instructores.html">Conócelos</a></button>
         </div>
     </section>
-
+    </div>
     <!--FOOTER-->
     <footer class="footerstyle footer">
         <div>
             <h4>Copyright todos los derechos reservados Bai-k 2023</h4>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

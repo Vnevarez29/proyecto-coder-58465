@@ -115,6 +115,7 @@ header nav ul a {
 
 .navbar[data-bs-theme=dark] {
   --bs-navbar-color: #F5C61B;
+  --bs-navbar-toggler-border-color: rgb(11, 11, 11);
 }
 
 .navbar-collapse {
@@ -127,7 +128,7 @@ header nav ul a {
 
 .navbar-toggler {
   line-height: 0;
-  border: var(--bs-border-width) solid black;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
 }
 
 /*** REDES SOCIALES***/

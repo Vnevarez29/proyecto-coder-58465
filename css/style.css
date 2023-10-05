@@ -9,9 +9,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   background-color: white;
-  /*flex-direction: column;
-  flex-wrap: wrap;
-  align-content: stretch;*/
 }
 
 .grid-index {
@@ -69,32 +66,6 @@ header {
   height: auto;
 }
 
-/*.headerLeft {
-    display: flex;
-}
-
-.headerRight {
-    display: flex;
-}
-
-header nav {
-    padding: 20px 0px;
-}
-
-header nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-header nav ul li {
-    margin: 0 10px;
-    text-align: center;
-}
-
-header nav ul a {
-    color: #F5C61B;
-    text-decoration: solid;
-}*/
 /*** AJUSTES DE ESTILO A BOOTSTRAP***/
 .bg-body-tertiary {
   background-color: rgba(var(--bs-black), var(--bs-black)) !important;
@@ -163,37 +134,7 @@ header nav ul a {
 }
 
 /*** PORTADA***/
-#enLineaDiv {
-  display: inline-block;
-  margin: 10px;
-}
-
-.imgportada {
-  grid-area: imgportada;
-}
-
-.portada {
-  height: 80vh;
-  background-image: url("../imgs/banner-baik.jpg");
-  background-position: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*margin-top: 10px;
-  margin-bottom: 30px;
-  margin-left: 100px;
-  margin-right: 100px;*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .boton-portada {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;*/
   grid-area: boton-portada;
   padding-top: 30px;
 }
@@ -294,9 +235,6 @@ header nav ul a {
   background-color: black;
   color: white;
   padding: 20px;
-  /* width: 300px;
-  height: 0 auto;
-  padding-top: 50px;*/
   flex-wrap: wrap;
 }
 
@@ -375,7 +313,6 @@ header nav ul a {
   grid-template-rows: 80px 120px auto auto 100px 100px;
 }
 
-/*** grid areas***/
 .row1 {
   grid-area: row1;
   display: flex;

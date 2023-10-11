@@ -6,6 +6,9 @@
 //VARIABLES
 @import "./abstracts/variables";
 
+//FOOTER
+@import "./layout/footer";
+
 /*** ETIQUETAS PRINCIPALES ***/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -291,25 +294,6 @@ header {
 
 #boton-coach {
     padding-top: 20px;
-}
-
-/*** FOOTER***/
-.footer {
-    grid-area: footer;
-}
-
-.footerstyle {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 10px;
-    margin-top: 10px;
-    padding: 20px 0px 20px 0px;
-    color: $color-primario;
-    background-color: $color-secundario;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    align-content: center;
 }
 
 /*** INSTRUCTORES STYLE***/

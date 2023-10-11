@@ -68,13 +68,122 @@ header {
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
 }
 
-/*.navbar-collapse {
-    align-items: start;
+.boton-portada {
+  grid-area: boton-portada;
+  padding-top: 30px;
 }
 
-.navbar-nav {
-    align-items: end;
+/*** ACERCA DE***/
+.acerca {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  padding-top: 50px;
+}
+.acerca .parrafo-acerca {
+  height: 0 auto;
+  margin: 5px;
+  text-align: justify;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;*/
+}
+.acerca .acercaInfo {
+  padding: 10px;
+  margin: 10px;
+}
+.acerca .acercaInfo .imgBenefit {
+  width: 500px;
+  height: 0 auto;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 10px 10px 10px;
+}
+
+#boton-acerca {
+  padding-top: 30px;
+}
+
+/*.imgacerca {
+    color: $color-tercero;
+    background-color: $color-secundario;
+    grid-area: imgacerca;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-fit: cover;
+    justify-content: center;
 }*/
+/*** BENEFICIOS***/
+.beneficiosSeccion {
+  background-color: white;
+  color: black;
+  padding-top: 50px;
+}
+.beneficiosSeccion .container-beneficios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.beneficiosSeccion .container-beneficios .beneficios {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.beneficiosSeccion .container-beneficios .tamanoImg {
+  width: 150px;
+  height: 150px;
+}
+
+/*** COACH***/
+.coachSeccion {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.coachSeccion .parrafoCoach {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  margin: 10px;
+  text-align: center;
+}
+.coachSeccion .container-coaches {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 30px;
+  height: auto;
+}
+.coachSeccion .container-coaches .coach {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.coachSeccion .container-coaches .coach .tamanoImg2 {
+  width: 230px;
+  height: 230px;
+  border-radius: 10px;
+}
+.coachSeccion .container-coaches .coach .textoCoach {
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: oblique;
+  text-align: center;
+}
+
+#boton-coach {
+  padding-top: 20px;
+}
+
 /*** ETIQUETAS PRINCIPALES ***/
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -137,162 +246,6 @@ h4 {
   margin-bottom: 50px;
   font-size: 16px;
   font-weight: bold;
-}
-
-/*** PORTADA***/
-.boton-portada {
-  grid-area: boton-portada;
-  padding-top: 30px;
-}
-
-/*** ACERCA DE***/
-.acerca {
-  color: white;
-  background-color: black;
-  padding: 20px;
-  grid-area: acerca;
-  flex-wrap: wrap;
-  padding-top: 50px;
-}
-
-#div-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 5px;
-}
-
-.parrafo-acerca {
-  height: 0 auto;
-  margin: 5px;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-#boton-acerca {
-  padding-top: 30px;
-}
-
-.acercaInfo {
-  padding: 10px;
-  margin: 10px;
-}
-
-.imgacerca {
-  color: white;
-  background-color: black;
-  grid-area: imgacerca;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  object-fit: cover;
-  justify-content: center;
-}
-
-.imgBenefit {
-  width: 500px;
-  height: 0 auto;
-  display: flex;
-  margin: 5px;
-  padding: 10px;
-}
-
-/*** BENEFICIOS***/
-.benef {
-  grid-area: benef;
-}
-
-#beneficiosSeccion {
-  background-color: white;
-  color: black;
-  padding-top: 50px;
-  flex-wrap: wrap;
-}
-
-.container-beneficios {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  margin-top: 50px;
-}
-
-.beneficios {
-  width: 250px;
-  height: 250px;
-  text-align: center;
-}
-
-.tamanoImg {
-  width: 150px;
-  height: 150px;
-}
-
-/*** COACH***/
-.titulocoach {
-  grid-area: titulocoach;
-}
-
-.coachSeccion {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.parrafoCoach {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 40px;
-  margin: 10px;
-  text-align: center;
-}
-
-.container-coaches {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 30px;
-  height: auto;
-}
-
-.coach {
-  width: 250px;
-  height: 250px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.tamanoImg2 {
-  width: 230px;
-  height: 230px;
-  border-radius: 10px;
-}
-
-.textoCoach {
-  padding-bottom: 30px;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-style: oblique;
-  text-align: center;
-}
-
-#boton-coach {
-  padding-top: 20px;
 }
 
 /*** INSTRUCTORES STYLE***/

@@ -15,8 +15,12 @@
 //NAVBAR
 @import "./layout/navbar";
 
-//NAVBAR
+//PAGE HOME
 @import "./pages/home";
+
+//PAGE ESTUDIOS
+@import "./pages/estudio";
+
 
 /*** ETIQUETAS PRINCIPALES ***/
 body {
@@ -183,88 +187,6 @@ aside {
     height: auto;
 }
 
-/*** ESTUDIOS STYLES***/
-.portadaEstudios {
-    margin-top: 10px;
-    width: auto;
-}
-
-.parrafoEstudios {
-    text-align: center;
-    padding-bottom: 50px;
-    padding: 50px;
-}
-
-.morelos {
-    background-color: $color-secundario;
-    color: $color-tercero;
-    height: auto;
-}
-
-.estudiosH2 {
-    padding-top: 20px;
-    justify-content: center;
-}
-
-.estudios-h2 {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-}
-
-#img-morelos {
-    width: 400px;
-    height: 300px;
-    padding: 10px;
-    margin: 10px;
-}
-
-#parrafos-estudios {
-    width: 0 auto;
-    margin: 20px;
-    padding: 35px;
-    text-align: justify;
-    padding-top: 50px;
-}
-
-.columna-morelos {
-    display: flex;
-    justify-content: center;
-}
-
-.espacio-contenedores {
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-.espacio {
-    padding-top: 30px;
-}
-
-.nava {
-    background-color: $color-tercero;
-    color: $color-secundario;
-    height: auto;
-}
-
-#img-nava {
-    width: 400px;
-    height: 450px;
-    padding: 10px;
-    margin: 10px;
-}
-
-#textoFooter {
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 50px;
-}
-
-.contenedor-footer {
-    padding-top: 50px;
-}
 
 /*** HORARIOS STYLES***/
 .portadaHorario {

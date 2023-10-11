@@ -19,6 +19,14 @@
   align-content: center;
 }
 
+/*** HEADER ***/
+header {
+  background-color: black;
+  color: #F5C61B;
+  top: 0;
+  width: 100%;
+}
+
 /*** ETIQUETAS PRINCIPALES ***/
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,19 +76,6 @@ h4 {
 }
 
 /*** FIN ESTILOS ETIQUETAS PRINCIPALES ***/
-/*** HEADER ***/
-header {
-  grid-area: header;
-  background-color: black;
-  color: #F5C61B;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
-}
-
 /*** AJUSTES DE ESTILO A NAV BAR BOOTSTRAP***/
 .bg-body-tertiary {
   background-color: rgba(var(--bs-black), var(--bs-black)) !important;

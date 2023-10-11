@@ -9,6 +9,9 @@
 //FOOTER
 @import "./layout/footer";
 
+//HEADER
+@import "./layout/header";
+
 /*** ETIQUETAS PRINCIPALES ***/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -59,19 +62,6 @@ h4 {
     text-align: center;
 }
 /*** FIN ESTILOS ETIQUETAS PRINCIPALES ***/
-
-/*** HEADER ***/
-header {
-    grid-area: header;
-    background-color: $color-secundario;
-    color: $color-primario;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-}
 
 /*** AJUSTES DE ESTILO A NAV BAR BOOTSTRAP***/
 .bg-body-tertiary {

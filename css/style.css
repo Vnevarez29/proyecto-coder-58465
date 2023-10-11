@@ -66,7 +66,7 @@ header {
   height: auto;
 }
 
-/*** AJUSTES DE ESTILO A BOOTSTRAP***/
+/*** AJUSTES DE ESTILO A NAV BAR BOOTSTRAP***/
 .bg-body-tertiary {
   background-color: rgba(var(--bs-black), var(--bs-black)) !important;
 }
@@ -85,7 +85,7 @@ header {
 }
 
 .navbar[data-bs-theme=dark] {
-  --bs-navbar-color: #F5C61B;
+  --bs-navbar-color: $color-primario;
   --bs-navbar-toggler-border-color: rgb(11, 11, 11);
 }
 
@@ -495,8 +495,6 @@ aside {
 }
 
 .horariosH2 {
-  /* margin-left: 40%;
-  padding-bottom: 10px;*/
   text-align: center;
   margin: auto;
   padding-top: 50px;
@@ -519,7 +517,7 @@ aside {
   font-weight: bold;
 }
 
-/*** CONTACTO STYLES***/
+/*** CONTACTO STYLES- aplicacion de gradiente***/
 .mapa {
   margin: auto;
   padding-top: 20px;

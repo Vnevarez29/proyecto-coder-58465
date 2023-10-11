@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
+//RESET
+@import "./base/reset";
+
+//VARIABLES
+@import "./abstracts/variables";
 
 /*** ETIQUETAS PRINCIPALES ***/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    background-color: white;
+    color: $color-secundario;
+    background-color: $color-tercero;
 }
-
 .grid-index {
     display: grid;
     grid-template-areas:
@@ -26,11 +26,10 @@ body {
     grid-template-columns: 300px 3fr 1fr;
     grid-template-rows: auto 120px 80vh 100px auto auto auto 100px;
 }
-
 h1 {
     font-size: 45px;
     text-align: center;
-    color: #F5C61B;
+    color: $color-primario;
     grid-area: h1;
     display: flex;
     justify-content: center;
@@ -40,34 +39,29 @@ h1 {
     padding-top: 40px;
     padding-bottom: 20px;
 }
-
 h2 {
     font-size: 30px;
     text-align: center;
-    color: #F5C61B;
+    color: $color-primario;
     padding-bottom: 10px;
 }
-
 p {
     font-size: 16px;
 }
-
 a {
     text-decoration: none;
-    color: black;
+    color: $color-secundario;
 }
-
 h4 {
     text-align: center;
 }
-
 /*** FIN ESTILOS ETIQUETAS PRINCIPALES ***/
 
 /*** HEADER ***/
 header {
     grid-area: header;
-    background-color: black;
-    color: #F5C61B;
+    background-color: $color-secundario;
+    color: $color-primario;
     top: 0;
     width: 100%;
     display: flex;
@@ -76,7 +70,7 @@ header {
     height: auto;
 }
 
-/*** AJUSTES DE ESTILO A BOOTSTRAP***/
+/*** AJUSTES DE ESTILO A NAV BAR BOOTSTRAP***/
 .bg-body-tertiary {
     background-color: rgba(var(--bs-black), var(--bs-black)) !important;
 }
@@ -95,7 +89,7 @@ header {
 }
 
 .navbar[data-bs-theme=dark] {
-    --bs-navbar-color: #F5C61B;
+    --bs-navbar-color: $color-primario;
     --bs-navbar-toggler-border-color: rgb(11, 11, 11);
 }
 
@@ -130,8 +124,8 @@ header {
 
 /*** BOTONES***/
 .boton {
-    background-color: #F5C61B;
-    color: black;
+    background-color: $color-primario;
+    color: $color-secundario;
     border-style: none;
     width: 200px;
     height: 50px;
@@ -152,7 +146,7 @@ header {
 /*** ACERCA DE***/
 .acerca {
     color: white;
-    background-color: black;
+    background-color: $color-secundario;
     padding: 20px;
     grid-area: acerca;
     flex-wrap: wrap;
@@ -189,8 +183,8 @@ header {
 }
 
 .imgacerca {
-    color: white;
-    background-color: black;
+    color: $color-tercero;
+    background-color: $color-secundario;
     grid-area: imgacerca;
     display: flex;
     flex-direction: row;
@@ -213,8 +207,8 @@ header {
 }
 
 #beneficiosSeccion {
-    background-color: white;
-    color: black;
+    background-color: $color-tercero;
+    color: $color-secundario;
     padding-top: 50px;
     flex-wrap: wrap;
 }
@@ -245,8 +239,8 @@ header {
 }
 
 .coachSeccion {
-    background-color: black;
-    color: white;
+    background-color: $color-secundario;
+    color: $color-tercero;
     padding: 20px;
     flex-wrap: wrap;
 }
@@ -309,8 +303,8 @@ header {
     font-size: 10px;
     margin-top: 10px;
     padding: 20px 0px 20px 0px;
-    color: #F5C61B;
-    background-color: black;
+    color: $color-primario;
+    background-color: $color-secundario;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,7 +364,7 @@ aside {
     align-content: center;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #F5C61B;
+    background-color: $color-primario;
     border-radius: 10px;
     margin: 5px;
     align-items: center;
@@ -385,8 +379,8 @@ aside {
     justify-content: center;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: black;
-    color: #F5C61B;
+    background-color: $color-secundario;
+    color: $color-primario;
     margin: 5px;
     border-radius: 10px;
     align-items: center;
@@ -430,8 +424,8 @@ aside {
 }
 
 .morelos {
-    background-color: black;
-    color: white;
+    background-color: $color-secundario;
+    color: $color-tercero;
     height: auto;
 }
 
@@ -478,8 +472,8 @@ aside {
 }
 
 .nava {
-    background-color: white;
-    color: black;
+    background-color: $color-tercero;
+    color: $color-secundario;
     height: auto;
 }
 
@@ -511,8 +505,6 @@ aside {
 }
 
 .horariosH2 {
-    /* margin-left: 40%;
-    padding-bottom: 10px;*/
     text-align: center;
     margin: auto;
     padding-top: 50px;
@@ -536,7 +528,7 @@ aside {
 }
 
 
-/*** CONTACTO STYLES***/
+/*** CONTACTO STYLES- aplicacion de gradiente***/
 .mapa {
     margin: auto;
     padding-top: 20px;
@@ -555,8 +547,8 @@ aside {
     .btnInstruct {
         width: 200px;
         height: 50px;
-        background-color: #F5C61B;
-        color: black;
+        background-color: $color-primario;
+        color: $color-secundario;
         border-style: none;
         display: block;
         margin-left: auto;
@@ -570,8 +562,8 @@ aside {
 .boton-enviar {
     width: 200px;
     height: 50px;
-    background-color: #F5C61B;
-    color: black;
+    background-color: $color-primario;
+    color: $color-secundario;
     border-style: none;
     display: block;
     margin-left: auto;

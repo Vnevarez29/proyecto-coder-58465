@@ -1,0 +1,65 @@
+/*** ETIQUETAS PRINCIPALES ***/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-secundario;
+    background-color: $color-tercero;
+}
+.grid-index {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "h1 h1 h1"
+        "imgportada imgportada imgportada"
+        "boton-portada boton-portada boton-portada"
+        "acerca acerca imgacerca"
+        "benef benef benef"
+        "titulocoach titulocoach titulocoach"
+        "footer footer footer";
+    grid-template-columns: 300px 3fr 1fr;
+    grid-template-rows: auto 120px 80vh 100px auto auto auto 100px;
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    color: $color-primario;
+    grid-area: h1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: $color-primario;
+    padding-bottom: 10px;
+}
+p {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: $color-secundario;
+}
+h4 {
+    text-align: center;
+}
+
+.boton {
+    background-color: $color-primario;
+    color: $color-secundario;
+    border-style: none;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*** FIN ESTILOS ETIQUETAS PRINCIPALES ***/

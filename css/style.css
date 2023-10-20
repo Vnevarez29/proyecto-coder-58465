@@ -253,103 +253,11 @@ header {
   padding-top: 50px;
 }
 
-/*** ETIQUETAS PRINCIPALES ***/
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-  background-color: white;
-}
-
-.grid-index {
-  display: grid;
-  grid-template-areas: "header header header" "h1 h1 h1" "imgportada imgportada imgportada" "boton-portada boton-portada boton-portada" "acerca acerca imgacerca" "benef benef benef" "titulocoach titulocoach titulocoach" "footer footer footer";
-  grid-template-columns: 300px 3fr 1fr;
-  grid-template-rows: auto 120px 80vh 100px auto auto auto 100px;
-}
-
-h1 {
-  font-size: 45px;
-  text-align: center;
-  color: #F5C61B;
-  grid-area: h1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 10px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-h2 {
-  font-size: 30px;
-  text-align: center;
-  color: #F5C61B;
-  padding-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-h4 {
-  text-align: center;
-}
-
-/*** FIN ESTILOS ETIQUETAS PRINCIPALES ***/
-/*** BOTONES***/
-.boton {
-  background-color: #F5C61B;
-  color: black;
-  border-style: none;
-  width: 200px;
-  height: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 /*** INSTRUCTORES STYLE***/
-.main-grid-instructor {
-  display: grid;
-  grid-template-areas: "header header header" "h1 h1 h1" "row1 row1 aside" "row2 row2 aside" "btn-conocenos btn-conocenos btn-conocenos" "footer footer footer";
-  grid-template-columns: auto 1fr 0.5fr;
-  grid-template-rows: 80px 120px auto auto 100px 100px;
-}
-
 .row1 {
   grid-area: row1;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  height: auto;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.row2 {
-  grid-area: row2;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: auto;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-aside {
-  grid-area: aside;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   align-items: center;
   height: auto;
   flex-wrap: wrap;
@@ -368,6 +276,28 @@ aside {
   margin: 5px;
   align-items: center;
   padding-top: 15px;
+}
+
+.row2 {
+  grid-area: row2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tamImgInst {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding: 5px;
+}
+
+.parrafoInstru {
+  text-align: center;
 }
 
 .instructores2 {
@@ -401,13 +331,20 @@ aside {
   border-radius: 20px;
 }
 
-.parrafoInstru {
-  text-align: center;
-}
-
 .btn-conocenos {
   grid-area: btn-conocenos;
   height: auto;
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 /*** HORARIOS STYLES***/
@@ -456,6 +393,69 @@ aside {
   background: linear-gradient(to top, rgba(251, 251, 218, 0.452), rgba(226, 225, 195, 0.644), rgba(251, 251, 218, 0.452));
 }
 
+/*** ETIQUETAS PRINCIPALES ***/
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+.grid-index {
+  display: grid;
+  grid-template-areas: "header header header" "h1 h1 h1" "imgportada imgportada imgportada" "boton-portada boton-portada boton-portada" "acerca acerca imgacerca" "benef benef benef" "titulocoach titulocoach titulocoach" "footer footer footer";
+  grid-template-columns: 300px 3fr 1fr;
+  grid-template-rows: auto 120px 80vh 100px auto auto auto 100px;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  color: #F5C61B;
+  grid-area: h1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #F5C61B;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h4 {
+  text-align: center;
+}
+
+.boton {
+  background-color: #F5C61B;
+  color: black;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*** FIN ESTILOS ETIQUETAS PRINCIPALES ***/
 /*** APLICANDO SCSS EN MY WEB***/
 .botonInstructores {
   padding: 15px;

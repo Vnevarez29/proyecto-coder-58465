@@ -1,0 +1,96 @@
+/*** INSTRUCTORES STYLE***/
+
+.row1 {
+    grid-area: row1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    
+}
+
+.instructores {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: $color-primario;
+    border-radius: 10px;
+    margin: 5px;
+    align-items: center;
+    padding-top: 15px;
+}
+.row2 {
+    grid-area: row2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.tamImgInst {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding: 5px;
+}
+
+.parrafoInstru {
+    text-align: center;
+}
+
+.instructores2 {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: $color-secundario;
+    color: $color-primario;
+    margin: 5px;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+
+.tamImgInst {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding: 5px;
+}
+
+#tamImgInstMen {
+    width: 230px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn-conocenos {
+    grid-area: btn-conocenos;
+    height: auto;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}

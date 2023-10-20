@@ -1,0 +1,11 @@
+/*** CONTACTO STYLES- aplicacion de gradiente***/
+.mapa {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-contacto{
+    background: linear-gradient(to top, rgba(251, 251, 218, 0.452), rgba(226, 225, 195, 0.644), rgba(251, 251, 218, 0.452));
+}

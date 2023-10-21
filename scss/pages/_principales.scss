@@ -3,6 +3,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: $color-secundario;
     background-color: $color-tercero;
+    overflow-x: hidden;
 }
 .grid-index {
     display: grid;
